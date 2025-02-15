@@ -1,6 +1,7 @@
 
 import Header from "../comp/header";
 import Footer from "../comp/footer";
+import MainContent from "../comp/MainContent";
 
 const Home = () => {
   return (
@@ -8,9 +9,7 @@ const Home = () => {
 
     <Header/>
 
-    <main>
-      Home Page
-    </main>
+    <MainContent pageName="Page Home" />
 
     <Footer/>
   </>

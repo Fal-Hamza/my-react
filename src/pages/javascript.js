@@ -2,6 +2,7 @@
 
 import Header from "../comp/header";
 import Footer from "../comp/footer";
+import MainContent from "../comp/MainContent";
 
 const Javascript = () => {
   return (
@@ -9,9 +10,7 @@ const Javascript = () => {
 
     <Header/>
 
-    <main>
-      Javascript Page
-    </main>
+    <MainContent pageName="Page Javascript" />
 
     <Footer/>
     
