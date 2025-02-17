@@ -1,10 +1,11 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import "./Header.css";
 
 const Header = () => {
   return (
     <>
-      <header className="hide-when-mobile">
+      <header className="hide-when-mobile hamza">
         <h1> <Link to="/home"> C4a.dev **</Link> </h1>
         <ul className="flex">
           <li className="main-list">
@@ -69,7 +70,7 @@ const Header = () => {
         </ul>
       </header>
 
-      <header className="show-when-mobile">
+      <header style={{backgroundColor: "red"}} className="show-when-mobile">
         <h1> C4a.dev **</h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
