@@ -7,14 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
+/* h1 {
   color: aqua;
   font-size: 50px;
   text-align: center;
   border-bottom: 1px solid red;
   width: fit-content;
   text-align: center;
-}
+} */
 
 /* ===============
    0. global style

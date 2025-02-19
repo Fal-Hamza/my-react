@@ -1,21 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {   HelmetProvider } from "react-helmet-async";
 
-import  Home  from "./pages/home";
-import  HTML  from "./pages/html";
-import  Css  from "./pages/css";
-import  Javascript  from "./pages/javascript";
+import Home from "./pages/home";
+import HTML from "./pages/html";
+import Css from "./pages/css";
+import Javascript from "./pages/javascript";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
-    errorElement: <h1>Opsssssss......</h1>
+    errorElement: <h1>SORROY.........</h1>,
   },
 
   {
@@ -34,10 +34,13 @@ const router = createBrowserRouter([
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
+
   </React.StrictMode>
 );
-

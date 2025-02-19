@@ -5,8 +5,8 @@ import "./Header.css";
 const Header = () => {
   return (
     <>
-      <header className="hide-when-mobile hamza">
-        <h1> <Link to="/home"> C4a.dev **</Link> </h1>
+      <header className="hide-when-mobile">
+        <h1> <Link to="/"> C4a.dev **</Link> </h1>
         <ul className="flex">
           <li className="main-list">
             <NavLink className="main-link" to="/html">
@@ -70,7 +70,7 @@ const Header = () => {
         </ul>
       </header>
 
-      <header style={{backgroundColor: "red"}} className="show-when-mobile">
+      <header className="show-when-mobile">
         <h1> C4a.dev **</h1>
         <label className="absolute" htmlFor="burger">
           <i className="fas fa-bars" />
